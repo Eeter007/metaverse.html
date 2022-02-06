@@ -1,0 +1,60 @@
+a{
+  text-decoration:none;
+  color:green;
+}
+ol {
+  padding-left:35px;
+  border-right: 3px solid black;
+  width: 150px;
+  margin: 0;
+  padding-top: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 43px;
+  border-bottom: 3px solid black;
+  margin: 0;
+  padding-top:15px;
+}
+.define {
+ margin-top: 10px;
+ margin-bottom: 0; /* 'none'은 display 속성에서만 쓰임*/
+}
+.example {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+body {
+  margin: 0;
+}
+
+/* 정의하고 메타버스의 유형 위쪽으로 좀 올리고 오른쪽으로 좀 이동
+, border right를 border bottom에 딱 붙이기*/
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid1 {
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 620px) {
+  h1 {
+    font-size: 35px;
+    border-bottom: none;
+  }
+  ol {
+    border-right: none;
+  }
+  #grid{
+    display: block;
+  }
+  #grid1 {
+    padding-left: 19px;
+  }
+}
+
+/*
+다른 것들에도 적용+ 추가 페이지 > 귀찮아서 않함 ㅎ
+*/
